@@ -11,4 +11,5 @@ __url__ = "https://github.com/abdullahselek/plant-disease-classification"
 __download_url__ = "https://github.com/abdullahselek/plant-disease-classification"
 __description__ = "A Python module that classifies disease on plants"
 
+from plant_disease_classification import api
 from .plant_disease_classifier import PlantDiseaseClassifier

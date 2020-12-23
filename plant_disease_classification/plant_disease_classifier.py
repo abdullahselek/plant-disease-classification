@@ -5,8 +5,7 @@ import torchvision.transforms as transforms
 
 from torch.autograd import Variable
 from PIL import Image
-from plant_disease_classification_pytorch.network import CNN
-from plant_disease_classification_pytorch import constant
+from plant_disease_classification.network import CNN, constant
 
 
 # CPU or GPU
@@ -59,6 +58,6 @@ class PlantDiseaseClassifier(object):
         tensor = self.__load_image(image_path)
         output = self.model(self.__batch_data(tensor))
         predicted = torch.argmax(output)
-        classes = constant.classes()
+        classes = constant.classes
         prediction_class = classes[int(predicted.item())]
         return prediction_class
