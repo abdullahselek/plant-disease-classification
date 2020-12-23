@@ -13,7 +13,7 @@ def read(filename):
     with codecs.open(os.path.join(cwd, filename), 'rb', 'utf-8') as h:
         return h.read()
 
-metadata = read(os.path.join(cwd, 'plant-disease-classification', '__init__.py'))
+metadata = read(os.path.join(cwd, 'plant_disease_classification', '__init__.py'))
 
 def extract_metaitem(meta):
     meta_match = re.search(r"""^__{meta}__\s+=\s+['\"]([^'\"]*)['\"]""".format(meta=meta),
