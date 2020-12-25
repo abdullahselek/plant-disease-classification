@@ -1,6 +1,12 @@
 plant-disease-classification
 ============================
 
+.. image:: https://img.shields.io/pypi/v/plant-disease-classification.svg
+    :target: https://pypi.org/pypi/plant-disease-classification/
+
+.. image:: https://img.shields.io/pypi/pyversions/plant-disease-classification.svg
+    :target: https://pypi.org/project/plant-disease-classification
+
 A Python module that classifies disease on plants. You can classify plant images from Python or
 from the command line with a simple classification library.
 
