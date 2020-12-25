@@ -42,9 +42,7 @@ setup(
     platforms=['Any'],
     python_requires=">=3.5",
     install_requires=requirements,
-    setup_requires=['pytest-runner'],
-    tests_require=['pytest'],
-    keywords='plant disease classification, neural networks, pytorch',
+    keywords='plant disease classification, neural networks, pytorch, convolutional neural networks, plants, disease',
     classifiers=[
         'Intended Audience :: Developers',
         'License :: OSI Approved :: MIT License',
