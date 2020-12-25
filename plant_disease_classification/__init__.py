@@ -8,7 +8,7 @@ __copyright__ = "Copyright (c) 2020 Abdullah Selek"
 __license__ = "MIT License"
 __version__ = "0.1.0"
 __url__ = "https://github.com/abdullahselek/plant-disease-classification"
-__download_url__ = "https://github.com/abdullahselek/plant-disease-classification"
+__download_url__ = "https://pypi.org/project/plant-disease-classification/"
 __description__ = "A Python module that classifies disease on plants"
 
 from plant_disease_classification import api
