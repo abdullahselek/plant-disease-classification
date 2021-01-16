@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 
+from typing import Optional
+
 try:
     import plant_disease_classification_models
 except Exception:
@@ -19,5 +21,10 @@ model = plant_disease_classification_models.model_one()
 plant_disease_classifier = PlantDiseaseClassifier(model_path=model)
 
 
-def classify(image_path: str):
-    return plant_disease_classifier.classify(image_path=image_path)
+def classify(image_path: Optional[str] = None, image_data: Optional[bytes] = None):
+    if image_path:
+        return plant_disease_classifier.classify(image_path=image_path)
+    elif image_data:
+        return plant_disease_classifier.classify(image_data=image_data)
+    else:
+        raise Exception("Please provide image path or data of your image!")
