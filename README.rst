@@ -50,11 +50,17 @@ Classification using Python
 
     from plant_disease_classification import api
 
+    # Classification with image path
     result = api.classify(image_path="YOUR_IMAGE_PATH")
+
+    # Classification with image data
+    result = api.classify(image_data=YOUR_IMAGE_DATA)
 
 Classification via CLI
 ----------------------
 
 .. code:: bash
 
-    python -m plant_disease_classification -c testdata/4507d7a208e839e34466ba7d7bdb144e.jpg
+    python -m plant_disease_classification -p testdata/4507d7a208e839e34466ba7d7bdb144e.jpg
+
+    python -m plant_disease_classification -d BASE64_ENCODED_IMAGE_DATA
