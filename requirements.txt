@@ -2,4 +2,4 @@ plant-disease-classification-models==0.1.0
 torch==1.7.1
 torchvision==0.8.2
 numpy==1.19.4
-Pillow==9.0.0
+Pillow==9.0.1
